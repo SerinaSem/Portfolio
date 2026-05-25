@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Portfolio de Serina Semmani, future cheffe de projet IT orientée Data Science, BI, PMO et transformation digitale."/>
+<title>Serina Semmani - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="Home.css"/>
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+<div class="cursor-dot" id="cur" aria-hidden="true"></div>
+<div class="cursor-ring" id="curR" aria-hidden="true"></div>
+
+<nav class="site-nav" aria-label="Navigation principale">
+  <a href="#hero" class="nav-logo" aria-label="Retour à l'accueil">Serina Semmani</a>
+
+  <ul class="nav-center">
+    <li><a href="#about" data-fr>À propos</a><a href="#about" data-en>About</a></li>
+    <li><a href="#skills" data-fr>Compétences</a><a href="#skills" data-en>Skills</a></li>
+    <li><a href="#experience" data-fr>Expériences</a><a href="#experience" data-en>Experience</a></li>
+    <li><a href="#education" data-fr>Formations</a><a href="#education" data-en>Education</a></li>
+    <li><a href="#projects" data-fr>Projets</a><a href="#projects" data-en>Projects</a></li>
+    <li><a href="#contact-sec">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-toggle" aria-label="Choisir la langue">
+      <button class="lang-btn active" id="btn-fr" type="button" onclick="setLang('fr')">FR</button>
+      <button class="lang-btn" id="btn-en" type="button" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="CV_Serina.pdf" class="nav-cv" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true"><path d="M12 15V3m0 12-4-4m4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      <span data-fr>CV</span><span data-en>Resume</span>
+    </a>
+  </div>
+</nav>
+
+<main>
+  <section id="hero" class="hero-section">
+    <div class="hero-orbit" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <div class="eyebrow-pill">
+        <span data-fr><span class="status-dot">🟢</span> Disponible en alternance dès septembre 2026 - Rythme 2 sem. école / 6 sem. entreprise</span>
+        <span data-en><span class="status-dot">🟢</span> Available for work-study from September 2026 - 2 wks school / 6 wks company</span>
+      </div>
+
+      <h1>
+        <span data-fr>Transformer la donnée en décision, et les projets en <span class="accent-word">impact</span>.</span>
+        <span data-en>Turning data into decisions, and projects into <span class="accent-word">impact</span>.</span>
+      </h1>
+
+      <p class="hero-sub">
+        <span data-fr>Vous avez des données, des équipes et des objectifs. Je suis la personne qui fait le lien entre les trois.</span>
+        <span data-en>You have data, teams and goals. I am the person who connects all three.</span>
+      </p>
+
+      <p class="hero-pitch">
+        <span data-fr>Je cherche une entreprise prête à exploiter la puissance de la data. Vous avez les défis, j'ai les outils.</span>
+        <span data-en>I am looking for a company ready to harness the power of data. You have the challenges, I have the tools.</span>
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact-sec" class="btn btn-primary">
+          <span data-fr>Me contacter</span><span data-en>Get in touch</span>
+        </a>
+        <a href="CV_Serina.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">
+          <span data-fr>Voir CV</span><span data-en>View resume</span>
+        </a>
+      </div>
+
+      <div class="hero-proof">
+        <div><strong>EPITECH</strong><span>Data Science & BI</span></div>
+        <div><strong>COGEPART</strong><span data-fr>Gouvernance SI</span><span data-en>IT Governance</span></div>
+        <div><strong>Paris</strong><span data-fr>Mobilité Île-de-France</span><span data-en>Île-de-France area</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-label="Carte de profil de Serina Semmani">
+      <div class="photo-hero">
+        <img src="Photo.png" alt="Portrait professionnel de Serina Semmani"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="about">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Qui suis-je</div><div class="ey" data-en>Who am I</div>
+        <h2 data-fr>À propos <em>de moi</em></h2><h2 data-en>About <em>me</em></h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p data-fr>Je suis <strong>Serina Semmani</strong>, étudiante en <strong>Licence Informatique à Aix-Marseille Université</strong>, bientôt en Mastère <strong>Data Science & Business Intelligence à EPITECH</strong>.</p>
+          <p data-en>I am <strong>Serina Semmani</strong>, a Computer Science student at <strong>Aix-Marseille University</strong>, soon to pursue an MSc in <strong>Data Science & Business Intelligence at EPITECH</strong>.</p>
+          <p data-fr>Passionnée par la donnée au service de la décision, je me spécialise dans l'<strong>analyse de données</strong>, la <strong>modélisation</strong> et la <strong>visualisation</strong>, avec une appétence marquée pour les environnements projets transverses entre équipes métiers et techniques.</p>
+          <p data-en>Drawn to <strong>international and innovative environments</strong>, I specialize in <strong>IT project management</strong>, <strong>digital transformation</strong>, and <strong>cross-functional coordination</strong> between business and technical teams.</p>
+          <p data-fr>Je développe des outils de pilotage et de reporting (<strong>dashboards</strong>, <strong>KPIs</strong>, automatisation) et maîtrise la chaîne complète : de la collecte des besoins jusqu'à la mise en production d'un outil Data opérationnel.</p>
+          <p data-en>I bring <strong>analytical rigor</strong>, strong organizational skills, and adaptability to drive process optimization and manage high-impact projects.</p>
+          <p data-fr>Rigoureuse, analytique et adaptable, je vise à contribuer à des projets à fort impact Data dans un environnement innovant et international.</p>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card"><div class="metric-number">3+</div><div class="metric-label" data-fr>projets académiques</div><div class="metric-label" data-en>academic projects</div></div>
+          <div class="metric-card"><div class="metric-number">2</div><div class="metric-label" data-fr>expériences pro</div><div class="metric-label" data-en>professional experiences</div></div>
+          <div class="metric-card"><div class="metric-number">10+</div><div class="metric-label" data-fr>technologies</div><div class="metric-label" data-en>technologies</div></div>
+          <div class="metric-card"><div class="metric-number">Bac+5</div><div class="metric-label">EPITECH 2028</div></div>
+          <div class="language-card"><span>Français</span><strong>C2 · Natif</strong></div>
+          <div class="language-card"><span>English</span><strong>C1 · Fluent</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Savoir-faire</div><div class="ey" data-en>Expertise</div>
+        <h2 data-fr>Mes <em>compétences</em></h2><h2 data-en>My <em>skills</em></h2>
+      </div>
+      <div class="skills-grid reveal">
+        <article class="skill-card">
+          <div class="skill-kicker">Systems</div>
+          <h3 data-fr>Systèmes d'information</h3><h3 data-en>Information Systems</h3>
+          <div class="tags">
+            <span data-fr>Analyse des besoins</span><span data-en>Business analysis</span><span data-fr>Gestion de projet IT</span><span data-en>IT project management</span><span>Agile / Scrum</span><span>Reporting direction</span><span data-fr>Gouvernance SI</span><span data-en>IT Governance</span><span data-fr>Coordination métiers / IT</span><span data-en>Business / IT coordination</span><span data-fr>Comités de pilotage</span><span data-en>Steering committees</span><span data-fr>Documentation SI</span><span data-en>IT documentation</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-kicker">Data</div>
+          <h3 data-fr>Data & Analyse</h3><h3 data-en>Data & Analysis</h3>
+          <div class="tags"><span>Python</span><span>Pandas · NumPy</span><span>Matplotlib</span><span>Power BI</span><span>SQL</span><span data-fr>Visualisation</span><span data-en>Visualization</span><span data-fr>KPIs</span><span>Dashboards</span><span data-fr>Automatisation reporting</span><span data-en>Reporting automation</span><span data-fr>Modélisation</span><span data-en>Modeling</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-kicker">Build</div>
+          <h3 data-fr>Développement</h3><h3 data-en>Development</h3>
+          <div class="tags"><span>Python · Java</span><span>Flask · Django</span><span>API REST</span><span>HTML · CSS · JS</span><span>SQLite</span><span>Jinja2</span><span>JavaFX</span><span data-fr>Architecture MVC</span><span data-en>MVC architecture</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-kicker">Tools</div>
+          <h3 data-fr>Outils</h3><h3 data-en>Tools</h3>
+          <div class="tags"><span>Git</span><span>Jira · Confluence</span><span>Pack Office</span><span>Chart.js</span><span>Linux</span><span data-fr>Gestion documentaire</span><span data-en>Document management</span><span data-fr>Comptes-rendus</span><span data-en>Meeting minutes</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-kicker">Languages</div>
+          <h3 data-fr>Langues</h3><h3 data-en>Languages</h3>
+          <div class="tags"><span data-fr>Français - C2</span><span data-en>French - C2</span><span data-fr>Anglais - C1</span><span data-en>English - C1</span><span data-fr>Environnements internationaux</span><span data-en>International environments</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-kicker">Mindset</div>
+          <h3>Soft Skills</h3>
+          <div class="tags"><span data-fr>Esprit d'analyse</span><span data-en>Analytical mindset</span><span data-fr>Organisation</span><span data-en>Organization</span><span data-fr>Travail en équipe</span><span data-en>Teamwork</span><span>Communication</span><span data-fr>Autonomie</span><span data-en>Autonomy</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-ink" id="experience">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Expériences professionnelles</div><div class="ey" data-en>Professional experience</div>
+        <h2 data-fr>Expériences <em>professionnelles</em></h2><h2 data-en>Professional <em>experience</em></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-group">
+          <div class="timeline-grid timeline-grid-stacked">
+            <article class="timeline-card">
+              <div class="timeline-date" data-fr>Avr. 2026 - Aujourd'hui</div><div class="timeline-date" data-en>Apr. 2026 - Present</div>
+              <h3 data-fr>Stage - Gestion de projet & Gouvernance SI</h3><h3 data-en>Internship - Project Management & IT Governance</h3>
+              <p class="timeline-place">COGEPART · Marseille</p>
+              <ul data-fr><li>Conception de tableaux de bord de pilotage pour suivre l'activité, les indicateurs et les priorités opérationnelles.</li><li>Production de reporting direction avec lecture KPI, synthèse des points d'avancement et suivi des actions.</li><li>Participation aux comités de pilotage, préparation des supports et rédaction de comptes-rendus structurés.</li><li>Coordination entre équipes IT et métiers pour clarifier les besoins, suivre les demandes et fluidifier les échanges.</li><li>Formalisation des processus SI, gestion documentaire et amélioration continue de la gouvernance interne.</li></ul>
+              <ul data-en><li>Design of steering dashboards to monitor activity, indicators and operational priorities.</li><li>Management reporting with KPI reading, progress summaries and action follow-up.</li><li>Participation in steering committees, preparation of materials and structured meeting minutes.</li><li>Coordination between IT and business teams to clarify needs, track requests and improve communication.</li><li>Formalization of IT processes, documentation management and continuous improvement of internal governance.</li></ul>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-date">Mars · March 2024</div>
+              <h3 data-fr>Technicienne IT Dell</h3><h3 data-en>Dell IT Technician</h3>
+              <p class="timeline-place">MGEN · Marseille</p>
+              <ul data-fr><li>Déploiement de postes Dell en environnement professionnel.</li><li>Configuration des équipements, préparation utilisateur et vérification du bon fonctionnement.</li><li>Diagnostic et résolution d'incidents techniques de premier niveau.</li><li>Accompagnement des utilisateurs et application des procédures internes.</li></ul>
+              <ul data-en><li>Deployment of Dell workstations in a professional environment.</li><li>Equipment configuration, user setup and operational checks.</li><li>Diagnosis and resolution of first-level technical incidents.</li><li>User support and application of internal procedures.</li></ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-ink section-education" id="education">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Formations</div><div class="ey" data-en>Education</div>
+        <h2 data-fr>Parcours <em>académique</em></h2><h2 data-en>Academic <em>background</em></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-group">
+          <div class="timeline-grid timeline-grid-stacked">
+            <article class="timeline-card">
+              <div class="timeline-date" data-fr>Oct. 2026 - Juil. 2028</div><div class="timeline-date" data-en>Oct. 2026 - Jul. 2028</div>
+              <h3 data-fr>Mastère Data Science & Business Intelligence</h3><h3 data-en>MSc Data Science & Business Intelligence</h3>
+              <p class="timeline-place">EPITECH · Paris</p>
+              <p data-fr>Rythme 2 sem. école / 6 sem. entreprise. Formation orientée Data Science, Business Intelligence, pilotage de projets IT, analyse décisionnelle et transformation digitale.</p>
+              <p data-en>2 wks school / 6 wks company. Program focused on Data Science, Business Intelligence, IT project management, decision analytics and digital transformation.</p>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-date" data-fr>Sept. 2023 - Juin 2026</div><div class="timeline-date" data-en>Sept. 2023 - Jun. 2026</div>
+              <h3 data-fr>Licence Informatique</h3><h3 data-en>BSc Computer Science</h3>
+              <p class="timeline-place">Aix-Marseille Université · Marseille</p>
+              <p data-fr>Socle informatique complet : développement logiciel, algorithmique, bases de données, systèmes d'exploitation, systèmes d'information et projets académiques.</p>
+              <p data-en>Complete computer science foundation: software development, algorithms, databases, operating systems, information systems and academic projects.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Réalisations</div><div class="ey" data-en>Work</div>
+        <h2 data-fr>Mes <em>projets</em></h2><h2 data-en>My <em>projects</em></h2>
+      </div>
+      <div class="projects-grid reveal">
+        <a href="https://github.com/SerinaSem/Application-de-gestion-de-plannings" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 01</span><strong>Flask · SQLite · Planning</strong></div>
+          <div class="project-body">
+            <h3 data-fr>Application de gestion de plannings</h3><h3 data-en>Scheduling Management Application</h3>
+            <p data-fr>Application mobile connectée à un backend Flask avec SQLite. Connexion employé/employeur et génération automatique de plannings selon les disponibilités.</p>
+            <p data-en>Mobile app connected to a Flask backend with SQLite. Employee/employer login and automatic schedule generation based on availability constraints.</p>
+          </div>
+          <div class="project-footer"><span>Python · Flask · SQLite</span><span>GitHub</span></div>
+        </a>
+        <a href="https://github.com/SerinaSem/Plateforme-web-de-gestion-et-partage-de-sujets-d-examens" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 02</span><strong>Flask · SQLite · JavaScript</strong></div>
+          <div class="project-body">
+            <h3 data-fr>Plateforme web de sujets d'examens</h3><h3 data-en>Exam Subject Sharing Platform</h3>
+            <p data-fr>Plateforme web pour gérer, partager et téléverser des sujets d'examens, avec authentification, interface dynamique et architecture Flask/Jinja2.</p>
+            <p data-en>Web platform to manage, share and upload exam subjects, with authentication, a dynamic interface and a Flask/Jinja2 architecture.</p>
+          </div>
+          <div class="project-footer"><span>Python · Flask · Jinja2</span><span>GitHub</span></div>
+        </a>
+        <a href="https://github.com/SerinaSem/MiniPascal-Compiler-Java" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 03</span><strong>Java · Compiler Design</strong></div>
+          <div class="project-body">
+            <h3 data-fr>MiniPascal Compiler</h3><h3 data-en>MiniPascal Compiler</h3>
+            <p data-fr>Compilateur pédagogique Mini-Pascal développé en Java, orienté analyse lexicale, syntaxique et compréhension des étapes de compilation.</p>
+            <p data-en>Educational Mini-Pascal compiler written in Java, focused on lexical analysis, parsing and understanding the compilation pipeline.</p>
+          </div>
+          <div class="project-footer"><span>Java</span><span>GitHub</span></div>
+        </a>
+        <a href="https://github.com/SerinaSem/Simulateur-Processeur" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 04</span><strong>C · Systèmes</strong></div>
+          <div class="project-body">
+            <h3 data-fr>Simulateur processeur</h3><h3 data-en>Processor Simulator</h3>
+            <p data-fr>Simulation complète d'un processeur et d'un mini système d'exploitation : interruptions, appels système et exécution bas niveau.</p>
+            <p data-en>Complete simulation of a processor and mini operating system: interrupts, system calls and low-level execution logic.</p>
+          </div>
+          <div class="project-footer"><span>C · OS · Architecture</span><span>GitHub</span></div>
+        </a>
+        <a href="https://github.com/SerinaSem/TimeApp-JavaFX" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 05</span><strong>JavaFX · MVC</strong></div>
+          <div class="project-body">
+            <h3 data-fr>TimeApp JavaFX</h3><h3 data-en>TimeApp JavaFX</h3>
+            <p data-fr>Application JavaFX regroupant horloge, réveil, minuterie et chronomètre, structurée avec une architecture MVC et le State Pattern.</p>
+            <p data-en>JavaFX application bringing together clock, alarm, timer and stopwatch features, structured with MVC architecture and the State Pattern.</p>
+          </div>
+          <div class="project-footer"><span>Java · JavaFX</span><span>GitHub</span></div>
+        </a>
+        <a href="https://github.com/SerinaSem/Analyse-de-donn-es-climatiques-Python-" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-top"><span>Case study 06</span><strong>Python · Data Analysis</strong></div>
+          <div class="project-body">
+            <h3 data-fr>Analyse de données climatiques</h3><h3 data-en>Climate Data Analysis</h3>
+            <p data-fr>Traitement, interpolation, visualisation et corrélation de données climatiques avec NumPy, Pandas et Matplotlib.</p>
+            <p data-en>Processing, interpolation, visualization and correlation of climate data using NumPy, Pandas and Matplotlib.</p>
+          </div>
+          <div class="project-footer"><span>Python · Pandas · Matplotlib</span><span>GitHub</span></div>
+        </a>
+      </div>
+
+      <div class="github-panel reveal">
+        <div>
+          <h3 data-fr>Et bien d'autres sur GitHub</h3><h3 data-en>And many more on GitHub</h3>
+          <p data-fr>Algorithmes Java, scripts Python, Linux, projets académiques… tous mes repos sur mon profil.</p>
+          <p data-en>Java algorithms, Python scripts, Linux, academic projects… all my repos on my profile.</p>
+        </div>
+        <a href="https://github.com/SerinaSem" target="_blank" rel="noreferrer" class="btn btn-primary">
+          <span data-fr>Voir GitHub</span><span data-en>View GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact-sec">
+    <div class="section-wrap">
+      <div class="section-head reveal">
+        <div class="ey" data-fr>Envie d'échanger ?</div><div class="ey" data-en>Let's talk</div>
+        <h2 data-fr>Contactez-<em>moi</em></h2><h2 data-en>Get in <em>touch</em></h2>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-copy">
+          <p data-fr>Je recherche une alternance en <strong>gestion de projet IT, coordination transverse ou transformation digitale</strong> à partir de septembre 2026, mobilité Île-de-France.</p>
+          <p data-en>I am looking for a work-study contract in <strong>IT project management, cross-functional coordination or digital transformation</strong> from September 2026, Île-de-France area.</p>
+          <div class="contact-links">
+            <a href="mailto:semmaniserina@gmail.com">semmaniserina@gmail.com</a>
+            <a href="tel:+33748342291">+33 7 48 34 22 91</a>
+            <a href="https://www.linkedin.com/in/Serina-SEMMANI" target="_blank" rel="noreferrer">linkedin.com/in/Serina-SEMMANI</a>
+            <a href="https://github.com/SerinaSem" target="_blank" rel="noreferrer">github.com/SerinaSem</a>
+          </div>
+        </div>
+        <form class="contact-form glass" onsubmit="handleSend(event)">
+          <div class="form-row">
+            <div class="field"><label data-fr>Prénom</label><label data-en>First name</label><input type="text" placeholder="Marie"/></div>
+            <div class="field"><label data-fr>Nom</label><label data-en>Last name</label><input type="text" placeholder="Dupont"/></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" placeholder="marie@entreprise.com"/></div>
+          <div class="field">
+            <label data-fr>Objet</label><label data-en>Subject</label>
+            <input type="text" id="subj-input" placeholder="Proposition d'alternance"/>
+          </div>
+          <div class="field"><label>Message</label><textarea rows="5" placeholder="Bonjour Serina…"></textarea></div>
+          <button type="submit" class="send-btn"><span data-fr>Envoyer</span><span data-en>Send</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-copy">© 2026 <span>Serina Semmani</span></div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/Serina-SEMMANI" target="_blank" rel="noreferrer">LinkedIn</a>
+    <a href="https://github.com/SerinaSem" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="mailto:semmaniserina@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="Home.js"></script>
+</body>
+</html>
