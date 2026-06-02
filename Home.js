@@ -76,19 +76,27 @@ highlightCurrentSection();
 
 function handleSend(event) {
   event.preventDefault();
-  const button = event.target.querySelector(".send-btn");
+  const form = event.target;
+  const button = form.querySelector(".send-btn");
   const isEnglish = document.body.classList.contains("en");
 
   if (!button) return;
 
-  button.textContent = isEnglish ? "Sent" : "Envoyé";
-  button.style.background = "#1f8a61";
-  button.disabled = true;
+  const formData = new FormData(form);
+  const firstName = formData.get("firstName")?.trim() || "";
+  const lastName = formData.get("lastName")?.trim() || "";
+  const email = formData.get("email")?.trim() || "";
+  const subject = formData.get("subject")?.trim() || (isEnglish ? "Portfolio contact" : "Contact portfolio");
+  const message = formData.get("message")?.trim() || "";
 
-  setTimeout(() => {
-    button.innerHTML = "<span data-fr>Envoyer</span><span data-en>Send</span>";
-    button.style.background = "";
-    button.disabled = false;
-    event.target.reset();
-  }, 2800);
+  const body = [
+    `Nom: ${firstName} ${lastName}`,
+    `Email: ${email}`,
+    "",
+    "Message:",
+    message,
+  ].join("\n");
+
+  const mailto = `mailto:semmaniserina@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
 }

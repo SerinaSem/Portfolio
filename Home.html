@@ -312,15 +312,15 @@
         </div>
         <form class="contact-form glass" onsubmit="handleSend(event)">
           <div class="form-row">
-            <div class="field"><label data-fr>Prénom</label><label data-en>First name</label><input type="text" placeholder="Marie"/></div>
-            <div class="field"><label data-fr>Nom</label><label data-en>Last name</label><input type="text" placeholder="Dupont"/></div>
+            <div class="field"><label data-fr>Prénom</label><label data-en>First name</label><input type="text" name="firstName" placeholder="Marie" required/></div>
+            <div class="field"><label data-fr>Nom</label><label data-en>Last name</label><input type="text" name="lastName" placeholder="Dupont" required/></div>
           </div>
-          <div class="field"><label>Email</label><input type="email" placeholder="marie@entreprise.com"/></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="marie@entreprise.com" required/></div>
           <div class="field">
             <label data-fr>Objet</label><label data-en>Subject</label>
-            <input type="text" id="subj-input" placeholder="Proposition d'alternance"/>
+            <input type="text" id="subj-input" name="subject" placeholder="Proposition d'alternance" required/>
           </div>
-          <div class="field"><label>Message</label><textarea rows="5" placeholder="Bonjour Serina…"></textarea></div>
+          <div class="field"><label>Message</label><textarea rows="5" name="message" placeholder="Bonjour Serina…" required></textarea></div>
           <button type="submit" class="send-btn"><span data-fr>Envoyer</span><span data-en>Send</span></button>
         </form>
       </div>
