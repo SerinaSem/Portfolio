@@ -515,8 +515,50 @@ h2 em{font-style:normal;color:var(--muted)}
     radial-gradient(circle at 80% 20%,rgba(255,250,254,.24),transparent 10rem);
   color:#fff;
 }
-.project-top span{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.56)}
+.project-visual{position:relative;overflow:hidden}
+.project-visual::before{
+  content:"";
+  position:absolute;
+  inset:auto -16% -44% auto;
+  width:190px;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:rgba(255,255,255,.2);
+}
+.project-meta{position:relative;z-index:2;display:flex;flex-direction:column;gap:.25rem}
+.project-top span{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.62)}
 .project-top strong{color:#fff;font-size:.86rem}
+.visual-planning{background:linear-gradient(135deg,#7857ff,#48c6ef)}
+.visual-platform{background:linear-gradient(135deg,#ff7ab6,#9b5cf6)}
+.visual-compiler{background:linear-gradient(135deg,#21243d,#6d5dfc)}
+.visual-chip{background:linear-gradient(135deg,#29323c,#485563)}
+.visual-time{background:linear-gradient(135deg,#fc5c7d,#6a82fb)}
+.visual-climate{background:linear-gradient(135deg,#2dd4bf,#60a5fa)}
+.visual-calendar,.visual-browser,.visual-code,.visual-processor,.visual-clock,.visual-chart{position:absolute;right:1rem;bottom:1rem;z-index:2}
+.visual-calendar{display:grid;grid-template-columns:repeat(3,28px);gap:7px;padding:12px;border-radius:16px;background:rgba(255,255,255,.2);backdrop-filter:blur(10px)}
+.visual-calendar div{height:22px;border-radius:8px;background:rgba(255,255,255,.5)}
+.visual-calendar .active{background:#fff}
+.visual-browser{width:150px;padding:12px;border-radius:16px;background:rgba(255,255,255,.2);backdrop-filter:blur(10px)}
+.browser-bar{display:flex;gap:5px;margin-bottom:12px}
+.browser-bar i{width:8px;height:8px;border-radius:50%;background:#fff}
+.browser-row{height:10px;border-radius:999px;background:rgba(255,255,255,.55);margin-bottom:8px}
+.browser-row.short{width:68%}
+.browser-upload{width:44px;height:34px;border-radius:12px;background:#fff;margin-left:auto}
+.visual-code{display:grid;gap:6px;width:150px;padding:13px;border-radius:16px;background:rgba(0,0,0,.24);font-family:Consolas,monospace}
+.visual-code span{font-size:.7rem;text-transform:none;letter-spacing:0;color:#fff}
+.visual-code span:nth-child(2),.visual-code span:nth-child(4){margin-left:18px;color:#f9c5df}
+.visual-processor{width:112px;height:92px;border-radius:20px;background:rgba(255,255,255,.22);display:grid;place-items:center;border:1px solid rgba(255,255,255,.35)}
+.visual-processor span{color:#fff;font-size:1.05rem;letter-spacing:.08em}
+.visual-processor i{position:absolute;width:18px;height:4px;border-radius:999px;background:#fff}
+.visual-processor i:nth-of-type(1){left:-12px;top:24px}.visual-processor i:nth-of-type(2){left:-12px;bottom:24px}.visual-processor i:nth-of-type(3){right:-12px;top:24px}.visual-processor i:nth-of-type(4){right:-12px;bottom:24px}
+.visual-clock{width:112px;height:112px;border-radius:50%;border:9px solid rgba(255,255,255,.48);background:rgba(255,255,255,.18)}
+.visual-clock span,.visual-clock i{position:absolute;left:50%;top:50%;transform-origin:left center;background:#fff;border-radius:999px}
+.visual-clock span{width:34px;height:5px;transform:rotate(0deg)}
+.visual-clock i{width:27px;height:5px;transform:rotate(-64deg)}
+.visual-chart{display:flex;align-items:end;gap:9px;width:152px;height:96px;padding:12px;border-radius:16px;background:rgba(255,255,255,.2)}
+.visual-chart i{width:20px;border-radius:999px;background:#fff}
+.visual-chart i:nth-child(1){height:32px}.visual-chart i:nth-child(2){height:52px}.visual-chart i:nth-child(3){height:42px}.visual-chart i:nth-child(4){height:68px}
+.visual-chart span{position:absolute;left:16px;right:16px;bottom:34px;height:3px;border-radius:999px;background:#fff;transform:rotate(-12deg)}
 .project-body{padding:1.15rem .35rem .8rem;flex:1}
 .project-body h3{font-family:var(--font-display);font-size:1.15rem;line-height:1.25;margin-bottom:.6rem}
 .project-body p{color:var(--muted);font-size:.9rem;line-height:1.75}
